@@ -1,0 +1,3 @@
+*.vcf -text
+*.pdf binary
+*.jpg binary

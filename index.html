@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sontyana Adonijah Graham</title>
+<meta name="description" content="Sontyana Adonijah Graham, Ph.D. Materials and device engineer: sensors, energy harvesters and IoT systems, from a powder in a flask to a connected prototype.">
+<!-- Link preview (KakaoTalk, LinkedIn, WhatsApp). og:image must be an absolute URL: replace YOUR-DOMAIN after deploying. -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Sontyana Adonijah Graham, Ph.D.">
+<meta property="og:description" content="Materials and device engineer. From a powder in a flask to a working, connected prototype.">
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     EDITING GUIDE
+     All colours and spacing live in :root below.
+     All text content lives in the <body>; look for the comments
+     <!-- SECTION: ... --> to find each block.
+     ============================================================ */
+  :root{
+    --bg:#f7f8fb; --card:#ffffff; --ink:#0f172a; --muted:#475569; --line:#e2e8f0;
+    --navy:#0b1f4b; --navy-2:#132a63; --amber:#f5b400; --amber-ink:#7a5a00;
+    --link:#1d4ed8; --radius:16px; --shadow:0 1px 2px rgba(15,23,42,.06),0 8px 24px rgba(15,23,42,.06);
+    --max:1080px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0b1020; --card:#131a2e; --ink:#e8edf7; --muted:#a7b1c7; --line:#243052;
+      --navy:#0b1f4b; --navy-2:#132a63; --amber:#f5b400; --amber-ink:#ffd666; --link:#8fb0ff;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  h1,h2,h3{line-height:1.15;margin:0}
+  h2{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:800;letter-spacing:-.01em}
+  h3{font-size:1.05rem;font-weight:700}
+  p{margin:0}
+  .muted{color:var(--muted)}
+  section{padding:56px 0}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-ink);margin-bottom:10px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:10;background:var(--navy);border-bottom:3px solid var(--amber)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  nav .brand{color:#fff;font-weight:800;letter-spacing:.08em}
+  nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+  nav li a{color:#dbe3f5;font-size:.9rem;font-weight:500}
+  nav li a:hover{color:#fff;text-decoration:none}
+  @media (max-width:640px){nav ul{display:none}}
+
+  /* hero */
+  .hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:56px 0 64px}
+  .hero .wrap{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:center}
+  .hero img{width:200px;height:200px;border-radius:50%;object-fit:cover;border:5px solid rgba(255,255,255,.9);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-.02em}
+  .hero .pitch{font-size:clamp(1.05rem,1.8vw,1.3rem);margin-top:12px;max-width:640px;color:#eef2ff}
+  .hero .role{margin-top:14px;color:#c7d2ee;font-size:.95rem}
+  .hero .now{margin-top:12px;color:#eef2ff;font-size:.95rem}
+  .hero .now span{display:inline-block;background:var(--amber);color:#1a1300;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-right:8px;vertical-align:1px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.92rem;border:1.5px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.06)}
+  .btn:hover{background:rgba(255,255,255,.14);text-decoration:none}
+  .btn.primary{background:var(--amber);color:#1a1300;border-color:var(--amber)}
+  .btn.primary:hover{background:#ffc83d}
+  .btn svg{width:16px;height:16px;fill:currentColor}
+  @media (max-width:640px){
+    .hero .wrap{grid-template-columns:1fr;text-align:center;gap:22px}
+    .hero img{margin:0 auto;width:160px;height:160px}
+    .btns{justify-content:center}
+    .hero .pitch{margin-left:auto;margin-right:auto}
+  }
+
+  /* stats */
+  .stats{margin-top:-34px;position:relative}
+  .stats .src{font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+  .stat{text-align:center;padding:8px 4px}
+  .stat b{display:block;font-size:1.5rem;font-weight:800;color:var(--ink)}
+  .stat span{font-size:.8rem;color:var(--muted)}
+  .stat a{color:inherit}
+  @media (max-width:800px){.stats .grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  .card .img{aspect-ratio:16/10;background:#fff;overflow:hidden}
+  .card .img img{width:100%;height:100%;object-fit:cover}
+  .card .body{padding:18px 18px 20px}
+  .card .num{font-size:.78rem;font-weight:700;color:var(--amber-ink);letter-spacing:.1em}
+  .card h3{margin:6px 0 8px}
+  .card p{font-size:.94rem;color:var(--muted)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .tag{font-size:.75rem;font-weight:600;padding:4px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+  @media (max-width:800px){.cards{grid-template-columns:1fr}}
+
+
+  /* applications */
+  .apps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  .app img{aspect-ratio:3/4;object-fit:cover;object-position:top;width:100%;background:#fff}
+  .app div{padding:10px 12px}
+  .app b{display:block;font-size:.9rem}
+  .app span{font-size:.8rem;color:var(--muted)}
+  @media (max-width:900px){.apps{grid-template-columns:repeat(2,1fr)}}
+
+  /* highlights */
+  .hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+  .hl article{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
+  .hl .j{font-size:.78rem;font-weight:700;color:var(--amber-ink);text-transform:uppercase;letter-spacing:.06em}
+  .hl h3{margin:6px 0 6px;font-size:1rem}
+  .hl p{font-size:.92rem;color:var(--muted)}
+  .hl a{font-size:.85rem;font-weight:600}
+  @media (max-width:700px){.hl{grid-template-columns:1fr}}
+
+  /* collapsible patents */
+  .fold{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .fold summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
+  .fold summary::-webkit-details-marker{display:none}
+  .fold summary b{font-size:1rem;flex:1 1 auto}
+  .fold summary i{font-style:normal;font-size:.85rem;font-weight:600;color:var(--link)}
+  .fold[open] summary i::after{content:" ▲"} .fold summary i::after{content:" ▼"}
+  .patents{margin:0;padding:0 18px 16px 38px}
+  .patents li{padding:8px 0;border-top:1px solid var(--line);font-size:.92rem}
+  .patents a{font-weight:600}
+  .patents span{display:block;font-size:.8rem;color:var(--muted)}
+
+  /* institutions */
+  .inst{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .inst span{font-size:.85rem;font-weight:600;padding:8px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}
+
+  /* teaching list */
+  .teach{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+  .teach li{font-size:.9rem;padding-left:14px;position:relative}
+  .teach li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+  .teach li span{color:var(--muted)}
+
+  /* timeline */
+  .tl{list-style:none;margin:22px 0 0;padding:0;border-left:2px solid var(--line)}
+  .tl li{position:relative;padding:0 0 22px 24px}
+  .tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:2px solid var(--card)}
+  .tl .when{font-size:.8rem;font-weight:700;color:var(--amber-ink);letter-spacing:.04em}
+  .tl b{display:block;font-size:1rem}
+  .tl span{font-size:.92rem;color:var(--muted)}
+  .two{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+  @media (max-width:800px){.two{grid-template-columns:1fr}}
+  .awards{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+  .awards li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.92rem;box-shadow:var(--shadow)}
+  .awards b{display:block}
+  .awards span{color:var(--muted);font-size:.85rem}
+
+  /* contact */
+  .contact{background:var(--navy);color:#fff}
+  .contact .eyebrow{color:var(--amber)}
+  .contact a{color:#fff;font-weight:600}
+  .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:18px}
+  .contact p{color:#dbe3f5}
+  @media (max-width:700px){.contact .grid{grid-template-columns:1fr}}
+  footer{padding:18px 0 28px;font-size:.8rem;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">S. A. GRAHAM</a>
+    <ul>
+      <li><a href="#work">What I do</a></li>
+      <li><a href="#apps">Applications</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- SECTION: HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <img src="assets/photo.jpg" alt="Portrait of Sontyana Adonijah Graham">
+    <div>
+      <h1>Sontyana Adonijah Graham, Ph.D.</h1>
+      <p class="pitch">Materials and device engineer. I take an idea from a powder in a flask to a working, connected prototype, and I have done it across sensors, energy harvesters and IoT systems.</p>
+      <p class="role">Postdoctoral researcher · Daegu Gyeongbuk Institute of Science and Technology (DGIST) and KAIST InnoCORE PRISM-AI Center, Republic of Korea</p>
+      <p class="now"><span>Currently</span> exploring how to take this capability out of the lab and into products.</p>
+      <div class="btns">
+        <a class="btn primary" href="assets/Sontyana_Adonijah_Graham.vcf" download>
+          <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5zm8-9h2v2h2v2h-2v2h-2V9h-2V7h2z"/></svg>Save contact
+        </a>
+        <a class="btn" href="mailto:sagraham@dgist.ac.kr">
+          <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7zm0 2.8V17h16V9.8l-8 5z"/></svg>Email
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/adonijah-graham-sontyana-43073512a/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg>LinkedIn
+        </a>
+        <a class="btn" href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2V17l7 4 7-4v-3.8l-7 3.8z"/></svg>Google Scholar
+        </a>
+        <a class="btn" href="https://orcid.org/0000-0002-8904-7694" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM7.4 7.3a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm-.7 2.6h1.5v7H6.7zm3.3 0h3.2c3 0 4.3 2 4.3 3.5s-1.3 3.5-4.3 3.5H10zm1.5 1.3v4.4h1.6c2 0 2.8-1.2 2.8-2.2s-.8-2.2-2.8-2.2z"/></svg>ORCID
+        </a>
+        <a class="btn" href="assets/CV_Sontyana_Adonijah_Graham.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M6 2h8l6 6v14H6zm7 1.5V9h5.5zM8 12h8v2H8zm0 4h8v2H8z"/></svg>CV (PDF)
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION: STATS  (numbers link out, so they never need hand-updating) -->
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat"><a href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener"><b id="st-works">61</b><span>papers</span></a></div>
+      <div class="stat"><a href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener"><b id="st-cites">2,404</b><span>citations</span></a></div>
+      <div class="stat"><a href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener"><b id="st-h">27</b><span>h-index</span></a></div>
+      <div class="stat"><a href="https://patents.google.com/?inventor=Sontyana+Adonijah+Graham" target="_blank" rel="noopener"><b>8</b><span>patents filed</span></a></div>
+    </div>
+    <p class="src">Publication metrics update automatically from <a href="https://openalex.org/authors/orcid:0000-0002-8904-7694" target="_blank" rel="noopener">OpenAlex</a> via ORCID. Google Scholar usually shows slightly higher counts.</p>
+  </div>
+</div>
+
+<!-- SECTION: WHAT I DO -->
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">What I do</span>
+    <h2>Three capabilities, developed end to end</h2>
+    <p class="muted" style="margin-top:10px;max-width:720px">I synthesise the materials, fabricate the devices, and integrate the full system. That means a prototype can go from a powder in a flask to a working, connected sensor inside one lab.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="img"><img src="assets/materials.jpg" alt="Materials developed: metal-organic frameworks, conductive materials, hydrogels, polymers, perovskites, MXene, metal oxides"></div>
+        <div class="body">
+          <div class="num">01</div>
+          <h3>Materials design and synthesis</h3>
+          <p>Functional materials tuned to generate charge from pressure, friction, vibration or heat. Many are biodegradable or made from waste, such as cotton and silk.</p>
+          <div class="tags"><span class="tag">MOFs</span><span class="tag">Hydrogels</span><span class="tag">Polymers</span><span class="tag">Piezo / ferroelectrics</span><span class="tag">Metal oxides</span><span class="tag">Biomaterials</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="assets/characterization.jpg" alt="Device characterisation: EDX mapping, work-function measurement, infrared thermal imaging, polarisation loops, 3D laser profiling and AFM"></div>
+        <div class="body">
+          <div class="num">02</div>
+          <h3>Device engineering and testing</h3>
+          <p>Thin films and devices made by printing, spinning, coating and patterning, then characterised from the nanoscale to full electrical output.</p>
+          <div class="tags"><span class="tag">Electrospinning</span><span class="tag">3D printing</span><span class="tag">Inkjet printing</span><span class="tag">Sputtering</span><span class="tag">Lithography</span><span class="tag">SEM / XRD / AFM</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="assets/app-smartfloor.jpg" style="object-position:top" alt="Smart floor system: triboelectric tiles feeding a power-management circuit and storage that run IoT devices"></div>
+        <div class="body">
+          <div class="num">03</div>
+          <h3>System integration and intelligence</h3>
+          <p>Harvesters wired into power-management circuits, wireless modules and AI-based data analysis, so a sensor becomes a working product rather than a lab result.</p>
+          <div class="tags"><span class="tag">Power management</span><span class="tag">IoT / wireless</span><span class="tag">Embedded</span><span class="tag">AI data analysis</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION: APPLICATIONS -->
+<section id="apps" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Where it is used</span>
+    <h2>Self-powered electronics I have demonstrated</h2>
+    <p class="muted" style="margin-top:10px;max-width:720px">Each tile is a working demonstration from a published paper: a harvester, a circuit, and a real task it performs with no battery.</p>
+    <div class="apps">
+      <div class="app"><img src="assets/app-biomedical.jpg" alt="Wearable and biomedical motion sensing on a wheelchair, nursing bed and walking aid"><div><b>Biomedical and wearable</b><span>Patient motion sensing on beds, wheelchairs and walking aids</span></div></div>
+      <div class="app"><img src="assets/app-smarthome.jpg" alt="Smart home sensing from a sofa, floor and chair"><div><b>Smart home</b><span>Furniture and floor sensors that detect presence and activity</span></div></div>
+      <div class="app"><img src="assets/app-industrial.jpg" alt="Industrial and body-attached sensing with thermal imaging and breath monitoring"><div><b>Industrial and body-attached</b><span>Temperature, liquid-flow and breathing monitors</span></div></div>
+      <div class="app"><img src="assets/app-biomechanical.jpg" alt="Biomechanical energy harvesting from jumping with a foot-mounted device"><div><b>Biomechanical</b><span>Harvesting from walking, jumping and foot pressure</span></div></div>
+      <div class="app"><img src="assets/app-automobile.jpg" alt="Sensors on a steering wheel, gear rod, horn and brake pedal"><div><b>Automobile</b><span>Driver-interaction sensors on steering, horn and brake</span></div></div>
+      <div class="app"><img src="assets/app-smartfloor.jpg" alt="Smart floor tiles with power management and energy storage"><div><b>Smart floor</b><span>Floor tiles that power IoT devices from footsteps</span></div></div>
+      <div class="app"><img src="assets/app-communication.jpg" alt="Self-powered Morse-code and SOS communication"><div><b>Communication</b><span>Morse-code and SOS signalling with no battery</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: HIGHLIGHTS -->
+<section id="highlights" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Proof points</span>
+    <h2>Selected first-author work</h2>
+    <div class="hl">
+      <article>
+        <div class="j">Advanced Functional Materials · 2026</div>
+        <h3>Hybrid nanogenerators from MOF-embedded electrospun membranes</h3>
+        <p>Breathable fibre membranes that harvest mechanical energy and feed IoT sensing directly.</p>
+        <a href="https://doi.org/10.1002/adfm.202507125" target="_blank" rel="noopener">Read the paper →</a>
+      </article>
+      <article>
+        <div class="j">ACS Energy Letters · 2020</div>
+        <h3>Waste cotton turned into a humidity-resistant energy harvester</h3>
+        <p>A porous cellulose film from discarded cotton that keeps working in humid conditions and biodegrades afterwards.</p>
+        <a href="https://doi.org/10.1021/acsenergylett.0c00635" target="_blank" rel="noopener">Read the paper →</a>
+      </article>
+      <article>
+        <div class="j">Advanced Functional Materials · 2024</div>
+        <h3>Colour-changing hybrid nanogenerator with real-time IoT sensing</h3>
+        <p>One device that harvests energy, senses temperature by changing colour, and streams the data wirelessly.</p>
+        <a href="https://doi.org/10.1002/adfm.202409608" target="_blank" rel="noopener">Read the paper →</a>
+      </article>
+      <article>
+        <div class="j">Nano Energy · 2023</div>
+        <h3>Understanding electrification, with an efficient power-management system</h3>
+        <p>Explains how charge builds on triboelectric surfaces, then pairs it with a circuit that delivers usable power to IoT devices.</p>
+        <a href="https://doi.org/10.1016/j.nanoen.2023.108413" target="_blank" rel="noopener">Read the paper →</a>
+      </article>
+    </div>
+    <p class="muted" style="font-size:.9rem;margin-top:16px">Full list of papers on <a href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8904-7694" target="_blank" rel="noopener">ORCID</a>.</p>
+
+    <!-- SECTION: PATENTS (collapsible) -->
+    <details class="fold">
+      <summary><span class="eyebrow" style="margin:0">Intellectual property</span><b>8 patent filings, Korean Intellectual Property Office</b><i>Show list</i></summary>
+      <ol class="patents">
+        <li><a href="https://patents.google.com/patent/KR20250111901A/en" target="_blank" rel="noopener">Multiferroic-based hybrid nanogenerator element and manufacturing method</a><span>Filed Jan 2024 · Published Jul 2025 · KR 10-2025-0111901</span></li>
+        <li><a href="https://patents.google.com/patent/KR102796811B1/en" target="_blank" rel="noopener">Nanogenerator comprising bismuth tungsten oxide</a><span>Filed Feb 2024 · Registered Apr 2025 · KR 10-2796811</span></li>
+        <li><a href="https://patents.google.com/patent/KR20250062445A/en" target="_blank" rel="noopener">Hybrid nanogenerator-based thermochromic sensor and fabrication method</a><span>Filed Oct 2023 · Published May 2025 · KR 10-2025-0062445</span></li>
+        <li><a href="https://patents.google.com/patent/KR20250033777A/en" target="_blank" rel="noopener">Nanogenerator with power-management system and integrated circuit</a><span>Filed Sep 2023 · Published Mar 2025 · KR 10-2025-0033777</span></li>
+        <li><a href="https://patents.google.com/patent/KR20230085496A/en" target="_blank" rel="noopener">Triboelectric nanogenerator</a><span>Filed Dec 2021 · Published Jun 2023 · KR 10-2023-0085496</span></li>
+        <li><a href="https://patents.google.com/patent/KR20230061870A/en" target="_blank" rel="noopener">Bidirectional rotary hybrid nanogenerator</a><span>Filed Oct 2021 · Published May 2023 · KR 10-2023-0061870</span></li>
+        <li><a href="https://patents.google.com/patent/KR20220119871A/en" target="_blank" rel="noopener">Smart-home triboelectric nanogenerator for harvesting, sensing and storing mechanical energy</a><span>Filed Feb 2021 · Published Aug 2022 · KR 10-2022-0119871</span></li>
+        <li><a href="https://patents.google.com/patent/KR20200144708A/en" target="_blank" rel="noopener">Cotton-based highly conductive triboelectric nano power generation element</a><span>Filed Jun 2019 · Published Dec 2020 · KR 10-2020-0144708</span></li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- SECTION: BACKGROUND -->
+<section id="background" style="padding-top:0">
+  <div class="wrap two">
+    <div>
+      <span class="eyebrow">Background</span>
+      <h2>Experience and education</h2>
+      <ul class="tl">
+        <li><div class="when">OCT 2025 – PRESENT</div><b>Postdoctoral researcher, DGIST and KAIST InnoCORE PRISM-AI Center</b><span>Self-powered, AI-integrated IoT systems for wearable and industrial use. Supervise MSc and PhD students, lead funding proposals.</span></li>
+        <li><div class="when">SEP 2023 – AUG 2024</div><b>Postdoctoral researcher, Institute for Wearable Convergence Electronics, Kyung Hee University</b><span>Self-powered wearable electronics; integrating nanogenerators with AI and biomedical systems.</span></li>
+        <li><div class="when">2018 – 2023</div><b>Ph.D., Electronics and Information Convergence Engineering, Kyung Hee University</b><span>Thesis: advanced materials and hybrid nanogenerators for sustainable energy harvesting and IoT applications.</span></li>
+        <li><div class="when">2017 – 2018</div><b>Researcher, Chonnam National University Medical School</b><span>Nanomaterials for biomedical imaging and therapy, including in-vivo studies.</span></li>
+        <li><div class="when">2015 – 2017</div><b>M.Sc., Nanoscience and Nanotechnology, University of Madras</b><span>Thesis project at IIT Madras on bismuth ferrite thin films for multiferroic photovoltaics.</span></li>
+        <li><div class="when">2012 – 2015</div><b>B.Sc., Nanoscience and Nanotechnology, Acharya Nagarjuna University</b><span></span></li>
+      </ul>
+
+      <span class="eyebrow" style="margin-top:8px">Institutions I have worked with</span>
+      <div class="inst">
+        <span title="Daegu Gyeongbuk Institute of Science and Technology">DGIST</span><span title="Korea Advanced Institute of Science and Technology">KAIST</span><span>Kyung Hee University</span><span>Chonnam National University</span><span title="Indian Institute of Technology Madras">IIT Madras</span><span>University of Madras</span><span>Acharya Nagarjuna University</span><span>University of Surrey</span>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Recognition</span>
+      <h2>Awards</h2>
+      <ul class="awards">
+        <li><b>Seal of Excellence, MSCA Postdoctoral Fellowship 2025</b><span>European Commission, Horizon Europe · Feb 2026</span></li>
+        <li><b>Graduate Student Award</b><span>European Materials Research Society Fall Meeting, Warsaw · Sep 2022</span></li>
+        <li><b>Excellent Patent Award</b><span>BK21 programme, Kyung Hee University · Nov 2021</span></li>
+        <li><b>Best Presentation Award</b><span>International Virtual Conference on Nanomaterials, India · Sep 2020</span></li>
+        <li><b>Best Poster Award</b><span>Korean Vacuum Society · Aug 2019</span></li>
+      </ul>
+      <span class="eyebrow" style="margin-top:28px">Teaching and talks</span>
+      <ul class="teach">
+        <li>Supervise MSc and PhD students at DGIST; lead funding proposals and cross-lab collaborations.</li>
+        <li>Invited speaker, International Forum on Optoelectronic Technology and Optical Engineering, Yangtze University, China. <span>May 2026</span></li>
+        <li>Invited seminar, Institute for Wearable Convergence Engineering, Kyung Hee University. <span>Mar 2026</span></li>
+        <li>Guest lecturer for Master's students, Acharya Nagarjuna University, India: energy materials, harvesting and storage. <span>2025 – 2026</span></li>
+        <li>Invited talk on AI and smart cities, Parousia International City School, Korea. <span>Jan 2026</span></li>
+        <li>12 conference presentations, including E-MRS Warsaw, Nano Korea and IUMRS Jeju.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let's talk</h2>
+    <div class="grid">
+      <div>
+        <p>Open to collaboration, partnerships and new ideas.</p>
+        <p style="margin-top:14px"><a href="mailto:sagraham@dgist.ac.kr">sagraham@dgist.ac.kr</a></p>
+        <p style="margin-top:6px"><a href="https://www.linkedin.com/in/adonijah-graham-sontyana-43073512a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=7lVLCiYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://orcid.org/0000-0002-8904-7694" target="_blank" rel="noopener">ORCID</a></p>
+      </div>
+      <div>
+        <p>Department of Energy Science and Engineering<br>Daegu Gyeongbuk Institute of Science and Technology (DGIST)<br>Daegu 42988, Republic of Korea</p>
+        <p style="margin-top:10px">KAIST InnoCORE PRISM-AI Center<br>Daejeon 34141, Republic of Korea</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Sontyana Adonijah Graham · Updated October 2026</footer>
+
+<script>
+  // Live publication metrics from OpenAlex, looked up by ORCID. If the request
+  // fails (offline, API down) the numbers already in the HTML stay as a fallback.
+  (async () => {
+    try {
+      const r = await fetch('https://api.openalex.org/authors/orcid:0000-0002-8904-7694?select=works_count,cited_by_count,summary_stats');
+      if (!r.ok) return;
+      const d = await r.json();
+      const n = v => v.toLocaleString('en-US');
+      document.getElementById('st-works').textContent = n(d.works_count);
+      document.getElementById('st-cites').textContent = n(d.cited_by_count);
+      document.getElementById('st-h').textContent = n(d.summary_stats.h_index);
+    } catch (e) { /* keep fallback numbers */ }
+  })();
+</script>
+
+</body>
+</html>
